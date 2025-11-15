@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <video controls width="600">
+        <source src="{{ url_for('serve_video', video_id=video_id, filename='video.mp4') }}" type="video/mp4">
+    </video>
+    <br><br>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>

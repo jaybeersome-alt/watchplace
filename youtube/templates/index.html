@@ -1,0 +1,14 @@
+<h1>Watchplace</h1>
+<title>Watchplace</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<a href="{{ url_for('upload') }}">Upload Video</a>
+<div class="video-feed">
+    {% for video in videos %}
+    <div class="video-item">
+        <a href="{{ url_for('watch', video_id=video.id) }}">
+            <img src="{{ url_for('serve_video', video_id=video.id, filename='thumbnail.jpg') }}" width="200">
+        </a>
+        <p>{{ video.title }}</p>
+    </div>
+    {% endfor %}
+</div>

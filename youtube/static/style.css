@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.video-feed {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.video-item {
+    width: 200px;
+    text-align: center;
+}
+
+.video-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.video-item h3 {
+    font-size: 16px;
+    margin: 10px 0 0 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="file"], input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+input[type="file"] {
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+}
+input[type="file"]:hover {
+    border-color: #888;
+}
+input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="text"]:focus {
+    border-color: #555;
+    outline: none;
+}
+
+p {
+    font-size: 14px;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+h1 {
+    color: #333;
+    font-family: 'Georgia', serif;
+}
+
+h2 {
+    color: #666;
+    font-family: 'Tahoma', sans-serif;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+h3 {
+    color: #444;
+    font-family: 'Verdana', sans-serif;
+}
+
+h4 {
+    color: #777;
+    font-family: 'Impact', Charcoal, sans-serif;
+}
+
+h5 {
+    color: #888;
+    font-family: 'Lucida Console', Monaco, monospace;
+}
+h6 {
+    color: #999;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+label {
+    font-size: 14px;
+    color: #555;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #cecece;
+}
